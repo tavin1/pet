@@ -1,0 +1,129 @@
+@media (max-width: 1280px) {
+    header, main {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        width: 70%;
+    }
+}
+
+
+body {
+    margin: 0;
+    margin-top: 80px;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 1px solid #ddd;
+    background-color:rgb(255, 229, 189);
+    width: 87%;
+}
+
+header h1 a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 1000px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    background-color:rgb(255, 229, 189);
+    padding: 30px 20px;
+    margin-left: 10px;
+    border-radius: 55px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color:antiquewhite;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    margin-top: 20px;
+}
+
+section {
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 155%;
+}
+
+
+#pets {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#pets img {
+    width: 200px;
+    display: block;
+    margin-left: -40px;
+    border-radius: 10px;
+}
+
+
+#pets div {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 50px;
+    width: calc(25% - 40px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color:antiquewhite;
+}
+
+#pets div:hover {
+    transform: scale(1.1);
+    background-color:#ddd;
+}
+
+
